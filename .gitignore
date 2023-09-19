@@ -1,0 +1,5 @@
+*.o
+sensorHandler
+build
+CMakeFiles
+.vscode
