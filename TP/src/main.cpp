@@ -1,5 +1,6 @@
 #include "../include/SensorData.h"
 #include "../include/BaseSensorBuffer.h"
+#include "../include/VectorSensorBuffer.h"
 #include <iostream>
 
 int main(int argc, char *argv[]){
@@ -10,6 +11,9 @@ int main(int argc, char *argv[]){
 
     BaseSensorBuffer<int> bsb;
     bsb.read("sensors.txt", "outputBase.txt");
+
+    VectorSensorBuffer<int> vsb;
+    vsb.read("sensors.txt", "outputVector.txt");
 
     delete sensor;
     return 0;

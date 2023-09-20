@@ -1,9 +1,22 @@
 #include "../include/BaseSensorBuffer.h"
 #include <fstream>
+#include <iostream>
 
 template class BaseSensorBuffer<int>;
 template class BaseSensorBuffer<float>;
 template class BaseSensorBuffer<double>;
+
+template <class T>
+void BaseSensorBuffer<T>::store(SensorData<T> &data)
+{
+    std::cout << "storing data " << data.getValue() << " from sensor " << data.getID() << std::endl;
+}
+
+template <class T>
+void BaseSensorBuffer<T>::retrieve(int sensorIdx)
+{
+    std::cout << "retrieving data from sensor " << sensorIdx << std::endl;
+}
 
 template <class T>
 void BaseSensorBuffer<T>::saveBufferToFile(const char *outName)
