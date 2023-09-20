@@ -3,6 +3,3 @@ sensorHandler
 build
 CMakeFiles
 .vscode
-TP/outputVector.txt
-TP/outputList.txt
-TP/outputBase.txt
