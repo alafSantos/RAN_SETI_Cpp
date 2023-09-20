@@ -44,7 +44,8 @@ void BaseSensorBuffer<T>::read(const char *fName, const char *outputFile)
         return;
     }
 
-    int data, id, value;
+    int id, data;
+    T value;
     while (true)
     {
         inputFile >> data;

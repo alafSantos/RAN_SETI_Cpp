@@ -1,9 +1,15 @@
 #include "../include/SensorData.h"
 #include "../include/BaseSensorBuffer.h"
 #include "../include/VectorSensorBuffer.h"
+#include "../include/ListSensorBuffer.h"
 #include <iostream>
 
-int main(int argc, char *argv[]){
+#define QUESTION_5
+#define VECTOR
+
+int main(int argc, char *argv[])
+{
+#ifndef QUESTION_5
     SensorData<int> *sensor = new SensorData(2, 34);
 
     std::cout << sensor->getValue() << std::endl;
@@ -15,6 +21,19 @@ int main(int argc, char *argv[]){
     VectorSensorBuffer<int> vsb;
     vsb.read("sensors.txt", "outputVector.txt");
 
+    ListSensorBuffer<int> lsb;
+    lsb.read("sensors.txt", "outputList.txt");
+
     delete sensor;
+#else
+#ifdef VECTOR
+    VectorSensorBuffer<float> vsb;
+    vsb.read("largedata.txt", "outputVector.txt");
+#else
+    ListSensorBuffer<float> lsb;
+    lsb.read("largedata.txt", "outputList.txt");
+#endif
+#endif
+
     return 0;
 }

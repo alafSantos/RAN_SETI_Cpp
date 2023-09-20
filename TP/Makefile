@@ -19,6 +19,7 @@ all: $(EXE)
 
 $(EXE):$(OBJS)
 	 $(CC) $(CFLAGS) $^ -o $@ 
+	 
 run:
 	./$(EXE)
 	

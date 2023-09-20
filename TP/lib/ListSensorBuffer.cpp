@@ -1,19 +1,19 @@
-#include "../include/VectorSensorBuffer.h"
+#include "../include/ListSensorBuffer.h"
 #include <fstream>
 #include <iostream>
 
-template class VectorSensorBuffer<int>;
-template class VectorSensorBuffer<float>;
-template class VectorSensorBuffer<double>;
+template class ListSensorBuffer<int>;
+template class ListSensorBuffer<float>;
+template class ListSensorBuffer<double>;
 
 template <class T>
-void VectorSensorBuffer<T>::store(SensorData<T> &data)
+void ListSensorBuffer<T>::store(SensorData<T> &data)
 {
     this->buffer.push_back(data);
 }
 
 template <class T>
-void VectorSensorBuffer<T>::retrieve(int sensorIdx)
+void ListSensorBuffer<T>::retrieve(int sensorIdx)
 {
     std::cout << "Buffer size before retrieving data from sensor " << sensorIdx << " is equal to " << this->buffer.size() << std::endl;
 
@@ -30,7 +30,7 @@ void VectorSensorBuffer<T>::retrieve(int sensorIdx)
 }
 
 template <class T>
-void VectorSensorBuffer<T>::saveBufferToFile(const char *outName)
+void ListSensorBuffer<T>::saveBufferToFile(const char *outName)
 {
     std::ofstream outputFileStream(outName);
 
@@ -47,4 +47,3 @@ void VectorSensorBuffer<T>::saveBufferToFile(const char *outName)
 
     outputFileStream.close();
 }
-
