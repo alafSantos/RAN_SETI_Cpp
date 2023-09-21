@@ -1,8 +1,8 @@
 #ifndef OPTIMISED_SENSOR_BUFFER
 #define OPTIMISED_SENSOR_BUFFER
 
-#include "../include/BaseSensorBuffer.h"
-#include "../include/SensorData.h"
+#include "BaseSensorBuffer.h"
+#include "SensorData.h"
 #include <list>
 
 template <class T>

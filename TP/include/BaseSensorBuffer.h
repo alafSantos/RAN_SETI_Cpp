@@ -1,7 +1,7 @@
 #ifndef BASE_SENSOR_BUFFER
 #define BASE_SENSOR_BUFFER
 
-#include "../include/SensorData.h"
+#include "SensorData.h"
 
 template <class T>
 class BaseSensorBuffer

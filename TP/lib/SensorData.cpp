@@ -1,4 +1,4 @@
-#include "../include/SensorData.h"
+#include "SensorData.h"
 
 template class SensorData<int>;
 template class SensorData<float>;

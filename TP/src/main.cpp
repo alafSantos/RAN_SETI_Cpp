@@ -1,8 +1,8 @@
-#include "../include/SensorData.h"
-#include "../include/BaseSensorBuffer.h"
-#include "../include/VectorSensorBuffer.h"
-#include "../include/ListSensorBuffer.h"
-#include "../include/OptimisedSensorBuffer.h"
+#include "SensorData.h"
+#include "BaseSensorBuffer.h"
+#include "VectorSensorBuffer.h"
+#include "ListSensorBuffer.h"
+#include "OptimisedSensorBuffer.h"
 #include <iostream>
 
 #define QUESTION_6

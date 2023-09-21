@@ -1,4 +1,4 @@
-#include "../include/VectorSensorBuffer.h"
+#include "VectorSensorBuffer.h"
 #include <fstream>
 #include <iostream>
 

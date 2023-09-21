@@ -1,8 +1,8 @@
 #ifndef VECTOR_SENSOR_BUFFER
 #define VECTOR_SENSOR_BUFFER
 
-#include "../include/BaseSensorBuffer.h"
-#include "../include/SensorData.h"
+#include "BaseSensorBuffer.h"
+#include "SensorData.h"
 #include <vector>
 
 template <class T>
