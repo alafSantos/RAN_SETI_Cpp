@@ -1,4 +1,4 @@
-#include "../include/OptimisedSensorBuffer.h"
+#include "OptimisedSensorBuffer.h"
 #include <fstream>
 #include <iostream>
 #include <algorithm> // find
@@ -15,7 +15,7 @@ void OptimisedSensorBuffer<T>::store(SensorData<T> &data)
 
 template <class T>
 bool found(SensorData<T> i) {
-  return (i.getID() == ;
+  return true;//(i.getID() == ;
 }
 
 
@@ -24,7 +24,7 @@ void OptimisedSensorBuffer<T>::retrieve(int sensorIdx)
 {
     std::cout << "Buffer size before retrieving data from sensor " << sensorIdx << " is equal to " << this->buffer.size() << std::endl;
 
-    int *p = std::find(this->buffer.begin(), this->buffer.end(), )
+    // int *p = std::find(this->buffer.begin(), this->buffer.end(), )
 
     for (auto i = this->buffer.begin(); i != this->buffer.end(); i++)
     {

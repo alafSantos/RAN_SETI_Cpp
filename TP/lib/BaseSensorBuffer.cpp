@@ -1,4 +1,4 @@
-#include "../include/BaseSensorBuffer.h"
+#include "BaseSensorBuffer.h"
 #include <fstream>
 #include <iostream>
 
