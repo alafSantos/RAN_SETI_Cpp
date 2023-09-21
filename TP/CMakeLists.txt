@@ -7,14 +7,11 @@ project(RAN_SETI_CPP_TP
     
 include_directories(${CMAKE_SOURCE_DIR}/include) # choosing header files folder
 
-add_executable(sensorHandler
-    src/main.cpp
-    lib/BaseSensorBuffer.cpp
-    lib/ListSensorBuffer.cpp
-    lib/OptimisedSensorBuffer.cpp
-    lib/VectorSensorBuffer.cpp
-    lib/SensorData.cpp
-    )
+
+# choosing cpp file folders
+file(GLOB SRC_SOURCES src/*.cpp)
+file(GLOB LIB_SOURCES lib/*.cpp)
+add_executable(sensorHandler ${SRC_SOURCES} ${LIB_SOURCES})
 
 set_target_properties(sensorHandler PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}) # defining the output file directory as the root TP folder
 
