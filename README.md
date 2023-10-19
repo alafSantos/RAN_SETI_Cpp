@@ -1,6 +1,15 @@
-# Embedded Systems and Information Processing, Institut Polytechnique de Paris Master 2 programme
+# Embedded Systems and Information Processing Master 2 programme, Institut Polytechnique de Paris
+
+# Refresher course in Object-oriented programming (OOP)
+
 This repository aims to show a little of the RAN course in C++ I followed in my master 2 programme. A RAN course is a course that has as objective to bring all master's students up to the same level in a topic necessary for the development of the programme's compulsory courses.
 
+## Meta
+ * **Master in Electrical Engineering - Institut Polytechnique de Paris**
+ * **Course:** Refresher in Object-oriented programming (OOP)
+ * **Author:** Alaf DO NASCIMENTO SANTOS
+ * **License**: [MIT](LICENSE)
+ * **Year:** 2023
 
 ## TP
 
@@ -38,7 +47,10 @@ It was possible to achieve the following:
 
 Basically the reason for the difference between list time execution and vector time execution is the way vectors and lists work. Vectors store the data sequentially while lists do not. Each element of a list has the address of the next and the previous ones so they can "jump" into another position simulating some kind of continuity. On the other hand, vectors are always continuous so when we delete a position, some components of the vector need to be moved in order to keep sequence. And in the code, we got a lot of data retrieving, so the vector keeps being rearranged.
 
-### Question 6
-To answer that question, the OptimisedSensorBuffer class is being developed.
 
-## Exam
+## How to Contribute to the Project
+### Question 6
+In order to answer that question, the OptimisedSensorBuffer class must be developed.
+
+#### Exam
+This part of the assignment was not even started until the moment of this commit.
